@@ -24,6 +24,11 @@ export const LogoTextLarge = styled.h1`
   font-size: ${theme.fonts.sizes["2xl"]};
   font-weight: 700;
 
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   @media (min-width: ${theme.screen.lg}) {
     font-size: ${theme.fonts.sizes["3xl"]};
   }
@@ -43,4 +48,9 @@ export const LogoTextSmall = styled.h1`
   font-family: ${theme.fonts.secondary};
   font-size: ${theme.fonts.sizes.xl};
   font-weight: 700;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;

@@ -46,6 +46,11 @@ export const Label = styled.label`
   font-size: ${theme.fonts.sizes.md};
   font-weight: 600;
 
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
   @media (min-width: ${theme.screen.sm}) {
     font-size: ${theme.fonts.sizes.lg};
   }

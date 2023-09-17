@@ -10,9 +10,9 @@ const theme = {
     primary: "Inter",
     secondary: "Poppins",
     sizes: {
-      sm: "1.2rem",
-      md: "1.4rem",
-      lg: "1.6rem",
+      sm: "1.4rem",
+      md: "1.6rem",
+      lg: "1.8rem",
       xl: "3.2rem",
       "2xl": "4.8rem",
       "3xl": "9.6rem",
@@ -31,7 +31,15 @@ const theme = {
     lg: "1.6rem",
     xl: "2.4rem",
     "2xl": "3.2rem",
+    "3xl": "4.8rem",
   },
+  borderRadius: {
+    sm: "0.4rem",
+    md: "0.8rem",
+    lg: "1.0rem",
+  },
+  hover: "brightness(95%)",
+  active: "scale(0.95)",
 };
 
 export default theme;

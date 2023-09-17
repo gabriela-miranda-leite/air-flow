@@ -15,6 +15,7 @@ const theme = {
       lg: "1.6rem",
       xl: "3.2rem",
       "2xl": "4.8rem",
+      "3xl": "9.6rem",
     },
   },
   screen: {
@@ -22,6 +23,14 @@ const theme = {
     md: "768px",
     lg: "1024px",
     xl: "1280px",
+  },
+  spacing: {
+    xs: "0.4rem",
+    sm: "0.8rem",
+    md: "1.2rem",
+    lg: "1.6rem",
+    xl: "2.4rem",
+    "2xl": "3.2rem",
   },
 };
 

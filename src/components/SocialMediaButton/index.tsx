@@ -7,7 +7,7 @@ export const SocialMediaButton = ({
   ...props
 }: SocialMediaButtonProps) => {
   return (
-    <S.Button {...props}>
+    <S.Button action={action} {...props}>
       <Icons.GoogleLogo size={32} />
       {`${action} com a Google`}
     </S.Button>

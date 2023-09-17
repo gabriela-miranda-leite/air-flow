@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Background from "../../assets/images/background.webp";
 import theme from "../../styles/theme";
 
-export const Container = styled.div`
+export const ContainerMobile = styled.div`
   position: relative;
   padding: 9.6rem 4.8rem 0;
 
@@ -14,7 +14,6 @@ export const Container = styled.div`
 
     background-image: url(${Background});
     background-size: cover;
-    background-position-y: bottom;
     height: 100vh;
     opacity: 0.5;
   }
@@ -28,6 +27,14 @@ export const ContainerAccount = styled.div`
   label + button {
     margin-bottom: 4.8rem;
   }
+
+  @media (min-width: ${theme.screen.lg}) {
+    margin-top: 12rem;
+
+    label + button {
+      margin-bottom: 6.4rem;
+    }
+  }
 `;
 
 export const Label = styled.label`
@@ -39,4 +46,24 @@ export const Label = styled.label`
   @media (min-width: ${theme.screen.sm}) {
     font-size: ${theme.fonts.sizes.lg};
   }
+`;
+
+export const ContainerDesktop = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: ${theme.screen.lg}) {
+    grid-template-columns: 1fr 3fr;
+  }
+`;
+
+export const ContainerInfo = styled.div`
+  padding: 12rem 12rem 0;
+`;
+
+export const BackgroundImage = styled.div`
+  background-image: url(${Background});
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.8;
 `;

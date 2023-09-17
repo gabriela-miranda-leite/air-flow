@@ -32,5 +32,10 @@ export const WelcomeAccount = () => {
     </S.ContainerDesktop>
   );
 
-  return Desktop();
+  return (
+    <>
+      {Mobile()}
+      {Desktop()}
+    </>
+  );
 };

@@ -17,6 +17,9 @@ export const ContainerMobile = styled.div`
     height: 100vh;
     opacity: 0.5;
   }
+  @media (min-width: ${theme.screen.lg}) {
+    display: none;
+  }
 `;
 
 export const ContainerAccount = styled.div`
@@ -49,16 +52,17 @@ export const Label = styled.label`
 `;
 
 export const ContainerDesktop = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: none;
 
   @media (min-width: ${theme.screen.lg}) {
+    display: grid;
     grid-template-columns: 1fr 3fr;
   }
 `;
 
 export const ContainerInfo = styled.div`
   padding: 12rem 12rem 0;
+  background-color: ${theme.colors.greyLight};
 `;
 
 export const BackgroundImage = styled.div`

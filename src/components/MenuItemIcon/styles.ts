@@ -14,6 +14,12 @@ const backgroundButton = ({ isActive, isFill }: MenuItemIconProps) => {
   return theme.colors.grey;
 };
 
+const sizeIcon = ({ isFill }: MenuItemIconProps) => {
+  if (isFill) return "3.2rem";
+
+  return "2.4rem";
+};
+
 export const MenuItemIcon = styled.button<MenuItemIconProps>`
   align-items: center;
   background-color: ${({ isActive, isFill }) =>
@@ -26,8 +32,8 @@ export const MenuItemIcon = styled.button<MenuItemIconProps>`
   width: 4.4rem;
 
   svg {
-    height: 2.4rem;
-    width: 2.4rem;
+    height: ${({ isFill }) => sizeIcon({ isFill })};
+    width: ${({ isFill }) => sizeIcon({ isFill })};
   }
 
   &:active {
@@ -37,5 +43,7 @@ export const MenuItemIcon = styled.button<MenuItemIconProps>`
 
   &:hover {
     filter: ${theme.hover};
+    background-color: ${({ isFill }) =>
+      isFill ? theme.colors.grey : "transparent"};
   }
 `;

@@ -1,5 +1,8 @@
+import { Divider } from "./Divider/styles";
 import * as Icons from "./Icons";
 import { Logo } from "./Logo";
+import { MenuItemIcon } from "./MenuItemIcon";
+// import { SideMenuIcon } from "./SideMenuIcon";
 import { SocialMediaButton } from "./SocialMediaButton";
 
-export { Icons, Logo, SocialMediaButton };
+export { Divider, Icons, Logo, MenuItemIcon, SocialMediaButton };

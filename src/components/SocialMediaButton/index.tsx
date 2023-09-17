@@ -2,11 +2,14 @@ import * as S from "./styles";
 import { Icons } from "../../components";
 import { SocialMediaButtonProps } from "./types";
 
-export const SocialMediaButton = ({ type }: SocialMediaButtonProps) => {
+export const SocialMediaButton = ({
+  action,
+  ...props
+}: SocialMediaButtonProps) => {
   return (
-    <S.Button>
+    <S.Button {...props}>
       <Icons.GoogleLogo size={32} />
-      {`${type} com a Google`}
+      {`${action} com a Google`}
     </S.Button>
   );
 };

@@ -9,8 +9,8 @@ const App = () => {
   return (
     <ThemeProvider theme={{ theme }}>
       <GlobalStyle />
-      <SocialMediaButton type="SignIn" />
-      <SocialMediaButton type="Login" />
+      <SocialMediaButton action="SignIn" />
+      <SocialMediaButton action="Login" />
     </ThemeProvider>
   );
 };

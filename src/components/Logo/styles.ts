@@ -2,9 +2,10 @@ import styled from "styled-components";
 
 import theme from "../../styles/theme";
 
-export const LogoLarge = styled.figure`
+export const LogoLarge = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
 `;
 
 export const LogoImageLarge = styled.img`
@@ -18,11 +19,10 @@ export const LogoImageLarge = styled.img`
   }
 `;
 
-export const LogoTextLarge = styled.figcaption`
+export const LogoTextLarge = styled.h1`
   font-family: ${theme.fonts.secondary};
   font-size: ${theme.fonts.sizes["2xl"]};
   font-weight: 700;
-  position: relative;
 
   @media (min-width: ${theme.screen.lg}) {
     font-size: ${theme.fonts.sizes["3xl"]};
@@ -33,13 +33,13 @@ export const LogoImageSmall = styled.img`
   height: 4.4rem;
 `;
 
-export const LogoSmall = styled.figure`
+export const LogoSmall = styled.div`
   display: flex;
   align-items: center;
   column-gap: ${theme.spacing.md};
 `;
 
-export const LogoTextSmall = styled.figcaption`
+export const LogoTextSmall = styled.h1`
   font-family: ${theme.fonts.secondary};
   font-size: ${theme.fonts.sizes.xl};
   font-weight: 700;

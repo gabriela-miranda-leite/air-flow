@@ -3,13 +3,14 @@ import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme";
 import GlobalStyle from "./styles/globalStyles";
 
-import { Logo } from "./components";
+import { SocialMediaButton } from "./components";
 
 const App = () => {
   return (
     <ThemeProvider theme={{ theme }}>
       <GlobalStyle />
-      <Logo />
+      <SocialMediaButton type="SignIn" />
+      <SocialMediaButton type="Login" />
     </ThemeProvider>
   );
 };

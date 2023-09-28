@@ -3,8 +3,7 @@ import { ThemeProvider } from "styled-components";
 import theme from "./styles/theme";
 import GlobalStyle from "./styles/globalStyles";
 
-import {Routes } from "./routes";
-import { WelcomeAccount } from "./pages";
+import { Routes } from "./routes";
 
 const App = () => {
   return (

@@ -1,3 +1,4 @@
+import { Dashboard } from "./Dashboard";
 import { WelcomeAccount } from "./WelcomeAccount";
 
-export { WelcomeAccount };
+export { Dashboard, WelcomeAccount };

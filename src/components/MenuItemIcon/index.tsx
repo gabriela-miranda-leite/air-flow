@@ -1,12 +1,13 @@
 import * as S from "./styles";
 
-import { MenuItemIconProps } from "./types";
+import { MenuItemIconProps, IconText } from "./types";
 import { Icons } from "../../components";
 
 export const MenuItemIcon = ({
   iconType,
   isActive,
   isFill,
+
   ...props
 }: MenuItemIconProps) => {
   const IconsType = {
@@ -19,6 +20,7 @@ export const MenuItemIcon = ({
   return (
     <S.MenuItemIcon {...props} isActive={isActive} isFill={isFill}>
       {IconsType[iconType]}
+      <p>{IconText[iconType]}</p>
     </S.MenuItemIcon>
   );
 };

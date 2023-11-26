@@ -4,6 +4,7 @@ import theme from "../../styles/theme";
 interface MenuItemIconProps {
   isActive?: boolean;
   isFill?: boolean;
+  isFull?: boolean;
 }
 
 const backgroundButton = ({ isActive, isFill }: MenuItemIconProps) => {
@@ -27,9 +28,15 @@ export const MenuItemIcon = styled.button<MenuItemIconProps>`
   border-radius: ${theme.borderRadius.md};
   border: none;
   display: flex;
-  height: 4.4rem;
-  justify-content: center;
-  width: 4.4rem;
+  padding: 1.6rem;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  font-weight: 600;
+  column-gap: 0.8rem;
+
+  & > p {
+    display: none;
+  }
 
   svg {
     height: ${({ isFill }) => sizeIcon({ isFill })};
@@ -45,5 +52,12 @@ export const MenuItemIcon = styled.button<MenuItemIconProps>`
     filter: ${theme.hover};
     background-color: ${({ isFill }) =>
       isFill ? theme.colors.grey : "transparent"};
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    & > p {
+      display: block;
+    }
   }
 `;

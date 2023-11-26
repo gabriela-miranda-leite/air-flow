@@ -1,4 +1,4 @@
-export type Size = "small" | "large";
+export type Size = "small" | "large" | "inline";
 
 export interface LogoProps {
   size?: Size;

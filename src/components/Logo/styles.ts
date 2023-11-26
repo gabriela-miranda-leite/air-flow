@@ -54,3 +54,24 @@ export const LogoTextSmall = styled.h1`
   -ms-user-select: none;
   user-select: none;
 `;
+
+export const LogoInline = styled.div`
+  display: flex;
+  column-gap: 0.8rem;
+  align-items: center;
+`;
+
+export const LogoImageInline = styled.img`
+  width: 3.2rem;
+
+  @media (min-width: ${theme.screen.lg}) {
+    width: 4.2rem;
+  }
+`;
+
+export const LogoTextInline = styled.h1`
+  display: none;
+  @media (min-width: ${theme.screen.lg}) {
+    display: block;
+  }
+`;

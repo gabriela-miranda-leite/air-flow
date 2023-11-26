@@ -28,11 +28,11 @@ export const MenuItemIcon = styled.button<MenuItemIconProps>`
   border-radius: ${theme.borderRadius.md};
   border: none;
   display: flex;
-  padding: 1.6rem;
+  padding: ${theme.spacing.lg};
   justify-content: flex-start;
-  font-size: 1.4rem;
+  font-size: ${theme.fonts.sizes.sm};
   font-weight: 600;
-  column-gap: 0.8rem;
+  column-gap: ${theme.spacing.sm};
 
   & > p {
     display: none;
@@ -54,8 +54,9 @@ export const MenuItemIcon = styled.button<MenuItemIconProps>`
       isFill ? theme.colors.grey : "transparent"};
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: ${theme.screen.lg}) {
     width: 100%;
+
     & > p {
       display: block;
     }
